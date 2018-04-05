@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\qcustomplot.o
+./debug\bodycls.o
+./debug\settings.o
+./debug\svch_autoemis_plugin_import.o
+./debug\moc_mainwindow.o
+./debug\moc_qcustomplot.o
+./debug\moc_bodycls.o
+./debug\moc_settings.o
+);

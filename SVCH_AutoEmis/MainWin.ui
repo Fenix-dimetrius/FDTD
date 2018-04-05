@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWin</class>
+ <widget class="QMainWindow" name="MainWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Cathode irradiation</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="21">
+     <widget class="QCustomPlot" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>dx:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Step"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Frequency:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Frequency"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Sigma:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Sigma"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Epsilon:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Epsilon"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Radius:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Radius"/>
+    </item>
+    <item row="10" column="1" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Height(R*H):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_Height"/>
+    </item>
+    <item row="12" column="1" colspan="2">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Height Rect:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_HeightRec"/>
+    </item>
+    <item row="14" column="1" colspan="2">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>Width Rect:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1">
+     <widget class="QRadioButton" name="radioButton_Ez">
+      <property name="text">
+       <string>Ez</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="2">
+     <widget class="QRadioButton" name="radioButton_Hy">
+      <property name="text">
+       <string>Hy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="3">
+     <widget class="QRadioButton" name="radioButton_Hx">
+      <property name="text">
+       <string>Hx</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="4">
+     <widget class="QRadioButton" name="radioButton_Ja">
+      <property name="text">
+       <string>Ja</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="1" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Time, ns:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="1" colspan="3">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="1" colspan="3">
+     <widget class="QPushButton" name="pushButton_Settings">
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="1" colspan="4">
+     <widget class="QLineEdit" name="lineEdit_WidthRec"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

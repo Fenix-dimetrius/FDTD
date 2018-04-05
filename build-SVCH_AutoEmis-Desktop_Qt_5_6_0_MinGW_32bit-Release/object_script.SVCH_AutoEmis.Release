@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\qcustomplot.o
+./release\bodycls.o
+./release\settings.o
+./release\MainWin.o
+./release\physconsts.o
+./release\moc_qcustomplot.o
+./release\moc_bodycls.o
+./release\moc_settings.o
+./release\moc_MainWin.o
+);
